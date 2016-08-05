@@ -33,7 +33,7 @@ ALLOWED_HOSTS = []
 
 INSTALLED_APPS = [
   'django_cassandra_engine',
-  'mysqlTest',
+  'l4_app',
   'django.contrib.admin',
   'django.contrib.auth',
   'django.contrib.contenttypes',
@@ -108,7 +108,7 @@ DATABASES = {
   }
 }
 
-DATABASE_ROUTERS = ['mysqlTest.routers.CustomRouter']
+DATABASE_ROUTERS = ['l4_app.routers.CustomRouter']
 
 # Password validation
 # https://docs.djangoproject.com/en/1.10/ref/settings/#auth-password-validators
