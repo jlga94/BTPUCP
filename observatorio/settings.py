@@ -34,6 +34,7 @@ ALLOWED_HOSTS = []
 INSTALLED_APPS = [
   'django_cassandra_engine',
   'l4_app',
+  'reportes',
   'django.contrib.admin',
   'django.contrib.auth',
   'django.contrib.contenttypes',
@@ -58,7 +59,7 @@ ROOT_URLCONF = 'observatorio.urls'
 TEMPLATES = [
   {
     'BACKEND': 'django.template.backends.django.DjangoTemplates',
-    'DIRS': [],
+    'DIRS': [os.path.join(BASE_DIR,'templates')],
     'APP_DIRS': True,
     'OPTIONS': {
       'context_processors': [
@@ -86,7 +87,7 @@ DATABASES = {
   },
   'cass_db': {
     'ENGINE': 'django_cassandra_engine',
-    'NAME': 'db',
+    'NAME': 'btpucp',
     'TEST_NAME': 'test_db',
     'HOST': '127.0.0.1',
     'PORT': 9042,
