@@ -50,6 +50,7 @@ MIDDLEWARE_CLASSES = [
   'django.contrib.auth.middleware.AuthenticationMiddleware',
   'django.contrib.messages.middleware.MessageMiddleware',
   'django.middleware.clickjacking.XFrameOptionsMiddleware',
+  'l4_app.middleware.RequireLoginMiddleware',
 ]
 
 ROOT_URLCONF = 'observatorio.urls'
